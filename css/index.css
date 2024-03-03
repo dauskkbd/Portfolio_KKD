@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+.navbar {
+  margin-bottom: 7%;
+}
+
+#frog_logo {
+  width: 40px;
+}
+
+.content-area {
+  padding: 0% 10% 10% 10%;
+}
+
+.content-area p {
+  margin-top: 5%;
+  text-indent: 7%;
+  font-size: 17px;
+}
+
+.content-area .career-site {
+  width: 40px;
+  margin-top: 5%;
+  margin-right: 2%;
+}
+
+#tags {
+  width: 40px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile_image {
+  --s: 15px; /* size of the frame */
+  --b: 2px; /* border thickness */
+  --w: 300px; /* width of the image */
+  --c: #7b3b3b;
+
+  width: var(--w);
+
+  object-fit: cover;
+  /* padding: calc(2 * var(--s)); */
+  /* --_g: var(--c) var(--b), #0000 0 calc(100% - var(--b)), var(--c) 0; */
+  /* background: linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
+    linear-gradient(90deg, var(--_g)) 50% / var(--_i, 100%) 100% no-repeat; */
+  outline: calc(var(--w) / 2) solid rgba(0, 0, 0, 0.2);
+  outline-offset: calc(var(--w) / -2 - 2 * var(--s));
+  transition: 0.4s;
+  cursor: pointer;
+}
+#profile_image:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s) / -2);
+  --_i: calc(100% - 2 * var(--s));
+}
