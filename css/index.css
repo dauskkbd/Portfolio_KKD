@@ -3,11 +3,16 @@ body {
 }
 /* naigation bar section */
 .navbar {
-  margin-bottom: 3%;
+  margin-bottom: 3.8%;
 }
 
 #frog_logo {
   width: 40px;
+  margin-right: 8%;
+}
+
+#reading {
+  color: rgb(210, 210, 210);
 }
 
 /* content area section */
@@ -86,7 +91,7 @@ body {
 }
 
 .node-logo {
-  width: 100px;
+  width: 80px;
   transition: transform 0.5s ease;
 }
 
@@ -95,7 +100,7 @@ body {
 }
 
 .express-logo {
-  width: 200px;
+  width: 150px;
   transition: transform 0.5s ease;
 }
 
@@ -115,7 +120,7 @@ body {
 }
 
 .php-logo {
-  width: 100px;
+  width: 80px;
   transition: transform 0.5s ease;
 }
 
@@ -124,11 +129,58 @@ body {
 }
 
 .laravel-logo {
-  height: 55px;
-  width: 100px;
+  height: 50px;
+  width: 80px;
   transition: transform 0.5s ease;
 }
 
 .laravel-logo:hover {
   transform: translateY(-10px);
+}
+
+#project_section h1 {
+  margin-bottom: 4%;
+}
+
+.separator {
+  border: 1px solid #000; /* Change color and thickness as needed */
+  margin-bottom: 5%;
+}
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.306);
+  margin-bottom: 5%;
+  box-shadow: 5px 5px 10px 0px rgba(37, 37, 37, 0.2);
+}
+
+.card img {
+  height: 150px;
+  padding: 3%;
+  border-radius: 15px;
+}
+
+.tech-used {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(1, 1, 204);
+}
+
+#tech_used_bloodborne,
+#tech_used_3g,
+#tech_used_rollnplay {
+  max-height: 0;
+  margin-bottom: 5%;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+#tech_used_3g.show {
+  max-height: 500px;
+}
+#tech_used_bloodborne.show {
+  max-height: 500px;
+}
+
+#tech_used_rollnplay.show {
+  max-height: 500px;
 }
