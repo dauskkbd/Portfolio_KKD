@@ -17,7 +17,7 @@ body {
 
 /* content area section */
 .content-area {
-  padding: 0% 10% 10% 10%;
+  padding: 0% 10% 5% 10%;
 }
 
 .content-area p {
@@ -144,12 +144,22 @@ body {
 
 .separator {
   border: 1px solid #000; /* Change color and thickness as needed */
-  margin-bottom: 5%;
+  margin-bottom: 4%;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.slide-up.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .card {
   border: 1px solid rgba(0, 0, 0, 0.306);
-  margin-bottom: 5%;
+  margin-bottom: 15%;
   box-shadow: 5px 5px 10px 0px rgba(37, 37, 37, 0.2);
 }
 
@@ -168,7 +178,8 @@ body {
 
 #tech_used_bloodborne,
 #tech_used_3g,
-#tech_used_rollnplay {
+#tech_used_rollnplay,
+#tech_used_cae {
   max-height: 0;
   margin-bottom: 5%;
   overflow: hidden;
@@ -184,4 +195,29 @@ body {
 
 #tech_used_rollnplay.show {
   max-height: 500px;
+}
+
+#tech_used_cae.show {
+  max-height: 500px;
+}
+
+footer {
+  margin-top: 5%;
+  height: 60px;
+  width: 100%;
+  background-color: rgb(41, 31, 31);
+  color: rgb(210, 210, 210);
+}
+
+.footer-text {
+  margin-top: 15px;
+  margin-left: 3%;
+}
+
+.footer-icon {
+  margin-top: 10px;
+  margin-left: 40%;
+  display: flex;
+  width: 100px;
+  height: 40px;
 }

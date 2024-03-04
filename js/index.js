@@ -40,3 +40,16 @@ function toggle_tech_used_rollnplay() {
     see_more_text_rollnplay.textContent = "See Less";
   }
 }
+
+function toggle_tech_used_cae() {
+  var tech_used_cae = document.getElementById("tech_used_cae");
+  var see_more_text_cae = document.getElementById("see_more_text_cae");
+
+  if (tech_used_cae.classList.contains("show")) {
+    tech_used_cae.classList.remove("show");
+    see_more_text_cae.textContent = "See Tech Used";
+  } else {
+    tech_used_cae.classList.add("show");
+    see_more_text_cae.textContent = "See Less";
+  }
+}
