@@ -18,12 +18,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <link rel="stylesheet" href="css/index.css" />
     <title>Portfolio KKD</title>
   </head>
   <body>
     <!-- Navigation bar section -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
@@ -48,13 +52,13 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about_section_outer">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#project_section">Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact_section">Contact</a>
             </li>
           </ul>
         </div>
@@ -112,7 +116,7 @@
           />
         </div>
       </div>
-      <div class="row d-flex justify-content-between">
+      <div class="row d-lg-flex justify-content-between">
         <div class="col-lg-12 tech-stacks">
           <span class="tech-text"><strong>Tech Stacks:</strong></span
           ><img
@@ -147,15 +151,16 @@
           />
           <img src="img/api.png" alt="A.P.I logo" class="img-fluid tech-logo" />
           <img
-            src="img/express.png"
-            alt="express.js logo"
-            class="img-fluid express-logo"
-          />
-          <img
             src="img/react.png"
             alt="jquery logo"
             class="img-fluid react-logo"
           />
+          <img
+            src="img/express.png"
+            alt="express.js logo"
+            class="img-fluid express-logo"
+          />
+
           <img
             src="img/mysql.png"
             alt="jquery logo"
@@ -178,7 +183,7 @@
       <div class="row">
         <h1>Project</h1>
         <div class="col-lg-3">
-          <div class="card">
+          <div class="card mb-2">
             <div
               class="bg-image hover-overlay"
               data-mdb-ripple-init
@@ -225,7 +230,7 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="card">
+          <div class="card mb-2">
             <div
               class="bg-image hover-overlay"
               data-mdb-ripple-init
@@ -277,7 +282,7 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="card">
+          <div class="card mb-2">
             <div
               class="bg-image hover-overlay"
               data-mdb-ripple-init
@@ -313,6 +318,7 @@
                     <li>Bootstrap 5</li>
                     <li>Javascript</li>
                     <li>jQuery</li>
+                    <li>Async</li>
                     <li>Laravel</li>
                     <li>MySql</li>
                     <li>Github</li>
@@ -330,7 +336,7 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="card">
+          <div class="card mb-2">
             <div
               class="bg-image hover-overlay"
               data-mdb-ripple-init
@@ -346,6 +352,7 @@
             </div>
             <div class="card-body">
               <h5 class="card-title">C.A.E. University</h5>
+              <span><strong>Collaborator</strong></span>
               <br />
               <div class="card-text">
                 <p>
@@ -366,6 +373,7 @@
                     <li>Bootstrap 5</li>
                     <li>Javascript</li>
                     <li>jQuery</li>
+                    <li>Async</li>
                     <li>Laravel</li>
                     <li>MySql</li>
                     <li>Github</li>
@@ -388,19 +396,71 @@
     <div class="container">
       <hr class="separator" />
     </div>
+    <div class="container" id="about_section_outer">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="mb-3">About</h1>
+          <div class="container-fluid" id="about_section_inner">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="container" id="about-section">
+                  <div class="row">
+                    <div class="col-lg-6 education">
+                      <h2 class="mb-2">Education</h2>
+                      <h4>College</h4>
+                      <span>West Bay College</span><br />
+                      <span>Bachelors of Science in Marine Engineering</span
+                      ><br />
+                      <span>Year 2010 - 2015</span>
+                    </div>
+                    <div class="col-lg-6 work-experience">
+                      <h2 class="mb-2">Work Experience</h2>
+                      <h4>Seafarer</h4>
+                      <span>KJCM Maritime Corporation</span><br />
+                      <span>From August 2018 - October 2023</span><br />
+                      <span
+                        >Assisted Engine Officers with any machinery repairs or
+                        maintenance task</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <hr class="separator" />
+    </div>
 
     <div class="container">
       <div class="row">
-        <h1 class="mb-5">About</h1>
-        <div class="col-lg-6">
-          <h2 class="mb-4">Education</h2>
-          <h4 class="mb-3">College</h4>
-          <span>West Bay College</span><br />
-          <span>Bachelors of Science in Marine Engineering</span><br />
-          <span>Year 2010 - 2015</span>
-        </div>
-        <div class="col-lg-6">
-          <h2>Work Experience</h2>
+        <div class="col-lg-12">
+          <h1 class="mb-5">Contacts</h1>
+          <div class="container-fluid" id="contact_section">
+            <div class="row">
+              <div class="col-lg-12">
+                <p>
+                  <strong>Mobile Number: </strong
+                  ><span class="material-symbols-outlined"> call </span> +63927
+                  276 1763
+                </p>
+                <p>
+                  <strong>Email Address: </strong
+                  ><span class="material-symbols-outlined"> mail </span>
+                  dauskkbd@gmail.com
+                </p>
+                <p>
+                  <strong>Address: </strong
+                  ><span class="material-symbols-outlined"> home </span> Santa
+                  Rosa City, Laguna
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
