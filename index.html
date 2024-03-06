@@ -58,7 +58,7 @@
               <a class="nav-link" href="#project_section">Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact_section">Contact</a>
+              <a class="nav-link" href="#contact_section_outer">Contact</a>
             </li>
           </ul>
         </div>
@@ -175,14 +175,14 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="project_section">
       <hr class="separator" />
     </div>
 
-    <div class="container" id="project_section">
+    <div class="container">
       <div class="row">
-        <h1>Project</h1>
-        <div class="col-lg-3">
+        <h1 class="mb-3">Project</h1>
+        <div class="col-lg-3 col-md-6 col-12">
           <div class="card mb-2">
             <div
               class="bg-image hover-overlay"
@@ -198,7 +198,10 @@
               ></a>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Bloodborne: Tales of Yharnam</h5>
+              <h5 class="card-title">
+                Bloodborne: Tales of
+                <br class="medium-screen-line-break" />Yharnam
+              </h5>
               <div class="card-text">
                 <p>
                   Dive into the world gothic sceneries and terror of Yharnam as
@@ -229,7 +232,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6 col-12">
           <div class="card mb-2">
             <div
               class="bg-image hover-overlay"
@@ -281,7 +284,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6 col-12">
           <div class="card mb-2">
             <div
               class="bg-image hover-overlay"
@@ -335,7 +338,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6 col-12">
           <div class="card mb-2">
             <div
               class="bg-image hover-overlay"
@@ -393,10 +396,10 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="about_section_outer">
       <hr class="separator" />
     </div>
-    <div class="container" id="about_section_outer">
+    <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <h1 class="mb-3">About</h1>
@@ -406,7 +409,10 @@
                 <div class="container" id="about-section">
                   <div class="row">
                     <div class="col-lg-6 education">
-                      <h2 class="mb-2">Education</h2>
+                      <h2 class="mb-2">
+                        Education
+                        <span class="material-symbols-outlined"> school </span>
+                      </h2>
                       <h4>College</h4>
                       <span>West Bay College</span><br />
                       <span>Bachelors of Science in Marine Engineering</span
@@ -414,7 +420,10 @@
                       <span>Year 2010 - 2015</span>
                     </div>
                     <div class="col-lg-6 work-experience">
-                      <h2 class="mb-2">Work Experience</h2>
+                      <h2 class="mb-2">
+                        Work Experience
+                        <span class="material-symbols-outlined"> work </span>
+                      </h2>
                       <h4>Seafarer</h4>
                       <span>KJCM Maritime Corporation</span><br />
                       <span>From August 2018 - October 2023</span><br />
@@ -432,14 +441,14 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="contact_section_outer">
       <hr class="separator" />
     </div>
 
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="mb-5">Contacts</h1>
+          <h1 class="mb-3">Contacts</h1>
           <div class="container-fluid" id="contact_section">
             <div class="row">
               <div class="col-lg-12">
@@ -447,6 +456,12 @@
                   <strong>Mobile Number: </strong
                   ><span class="material-symbols-outlined"> call </span> +63927
                   276 1763
+                </p>
+                <p>
+                  <strong>Messenger: </strong
+                  ><a href="https://m.me/kevinkenneth.daus">
+                    https://m.me/kevinkenneth.daus</a
+                  >
                 </p>
                 <p>
                   <strong>Email Address: </strong
@@ -466,32 +481,30 @@
     </div>
 
     <footer>
-      <div class="container-fluid">
+      <div class="container footer-container">
         <div class="row">
-          <div class="col-lg-4 col-md-6 col-12 footer-text">
-            <p>All rights reserved | Made by Kevin Kenneth B. Daus</p>
+          <div class="col-lg-12 footer-text">
+            <p>All rights reserved | Developer: Kevin Kenneth B. Daus</p>
           </div>
-          <div class="col-lg-8 d-lg-flex d-md-none d-none footer-icon">
-            <img
-              src="img/facebook.png"
-              alt="facebook logo"
-              class="img-fluid me-2"
-            />
-            <img
-              src="img/instagram.png"
-              alt="instagram logo"
-              class="img-fluid me-2"
-            />
-            <img
-              src="img/steam.png"
-              alt="instagram logo"
-              class="img-fluid me-2"
-            />
-            <img
-              src="img/discord.png"
-              alt="instagram logo"
-              class="img-fluid me-2"
-            />
+          <div class="col-lg-12">
+            <a href="https://www.facebook.com/kevinkenneth.daus"
+              ><img
+                src="img/facebook.png"
+                alt="facebook logo"
+                class="img-fluid footer-icon"
+            /></a>
+            <a href="https://www.instagram.com/ardyn.luciscaelum/"
+              ><img
+                src="img/instagram.png"
+                alt="facebook logo"
+                class="img-fluid footer-icon"
+            /></a>
+            <a href="https://m.me/kevinkenneth.daus"
+              ><img
+                src="img/messenger.png"
+                alt="facebook logo"
+                class="img-fluid footer-icon"
+            /></a>
           </div>
         </div>
       </div>
