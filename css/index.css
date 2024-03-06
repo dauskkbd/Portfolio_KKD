@@ -2,9 +2,6 @@ body {
   background-color: rgb(245, 245, 245);
 }
 /* naigation bar section */
-.navbar {
-  margin-bottom: 3.8%;
-}
 
 #frog_logo {
   width: 40px;
@@ -16,9 +13,6 @@ body {
 }
 
 /* content area section */
-.content-area {
-  padding: 0% 10% 0% 10%;
-}
 
 .content-area p {
   margin-top: 5%;
@@ -57,6 +51,28 @@ body {
   outline-offset: calc(var(--w) / -2 - 2 * var(--s));
   transition: 0.4s;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  #profile_image {
+    margin-top: 5%;
+    --s: 15px; /* size of the frame */
+    --b: 2px; /* border thickness */
+    --w: 220px; /* width of the image */
+    --c: #7b3b3b;
+    width: var(--w);
+    object-fit: cover;
+    outline: calc(var(--w) / 2) solid rgba(0, 0, 0, 0.2);
+    outline-offset: calc(var(--w) / -2 - 2 * var(--s));
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  #profile_image:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s) / -2);
+    --_i: calc(100% - 2 * var(--s));
+  }
 }
 
 #profile_image:hover {
@@ -204,12 +220,47 @@ body {
     padding-left: 2%;
     border-left: 1px solid rgba(0, 0, 0, 0.306);
   }
+  .content-area {
+    margin-top: 10%;
+    padding: 0% 10% 0% 10%;
+  }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 777px) and (max-width: 991px) {
   .work-experience {
     margin: 3% 0%;
     padding-left: 2%;
+    border-left: 1px solid rgba(0, 0, 0, 0.306);
+  }
+  .content-area {
+    margin-top: 12%;
+    padding: 0% 10% 0% 10%;
+  }
+}
+
+@media (max-width: 776px) {
+  .work-experience {
+    margin: 3% 0%;
+    padding-left: 2%;
+  }
+
+  .content-area {
+    margin-top: 15%;
+    padding: 0% 10% 0% 10%;
+  }
+}
+
+@media (max-width: 550px) {
+  .content-area {
+    margin-top: 20%;
+    padding: 0% 10% 0% 10%;
+  }
+}
+
+@media (max-width: 400px) {
+  .content-area {
+    margin-top: 20%;
+    padding: 0% 10% 0% 10%;
   }
 }
 

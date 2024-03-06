@@ -1,3 +1,19 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach(function (navLink) {
+    navLink.addEventListener("click", function () {
+      // Remove 'active' class from all navigation links
+      navLinks.forEach(function (link) {
+        link.classList.remove("active");
+      });
+
+      // Add 'active' class to the clicked navigation link
+      this.classList.add("active");
+    });
+  });
+});
+
 function toggle_tech_used_bloodborne() {
   var tech_used_bloodborne = document.getElementById("tech_used_bloodborne");
   var see_more_text_bloodborne = document.getElementById(
